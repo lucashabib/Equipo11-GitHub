@@ -9,6 +9,14 @@ body {
     background-color: #f7f7f7;
 }
 
+.home-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -54,9 +62,19 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #e64a19;
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
 }
