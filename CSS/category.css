@@ -19,6 +19,14 @@ footer{
     background-color: rgb(242, 133, 0);
 }
 
+#Contenedor_Productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(0, 162, 255);
+}
+
 .Imagen_ControlPS5{
     width: 250px;
     height: auto;
@@ -26,5 +34,10 @@ footer{
 
 .Imagen_Carrito{
     width: 20px;
+    height: auto;
+}
+
+.Imagen_Televisor{
+    width: 250px;
     height: auto;
 }
