@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .cuerpo_html{
     background-color:beige;
 }
@@ -6,25 +10,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid rgb(242, 133, 0);
+    border: 3px solid rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
+}
+
+.Imagen_Index{
+    flex: 2;
 }
 
 #Item_Index{
     flex: 1;
     padding: 10px;
-    border: 1px solid rgb(242, 133, 0);
+    border: 1px solid rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
+    font-size: 20px;
+}
+
+#Link_Index{
+    text-decoration: none;
+    text-decoration: rgb(242, 133, 0);
 }
 
 footer{
     background-color: rgb(242, 133, 0);
 }
 
-#Contenedor_Productos{
+.Contenedor_Productos{
+    display: flex;
+    flex-direction: row;
+}
+
+#Contenedor_Items{
     display: flex;
     flex-direction: column;
+    flex: 1;
+    flex-wrap: nowrap;
+    border: 3px solid rgb(0, 162, 255);
     justify-content: space-between;
     align-items: center;
-    border: 3px solid rgb(0, 162, 255);
+    padding: 5px;
 }
 
 .Imagen_ControlPS5{
@@ -38,6 +62,11 @@ footer{
 }
 
 .Imagen_Televisor{
+    width: 250px;
+    height: auto;
+}
+
+.Imagen_ThermoMix{
     width: 250px;
     height: auto;
 }
