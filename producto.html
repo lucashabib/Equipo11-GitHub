@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <link rel="stylesheet" href="./CSS/producto.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Detalles del Producto</h1>
+            <button id="toggleMenu">Menú</button>
+            <nav id="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./cart.html">Ir al Carrito</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="producto">
+                <h2>Remera boxy fit</h2>
+                <button>Agregar al Carrito</button>
+                <img src="" alt="Imagen del Producto">
+                <p id="descripcion">Una remera hecha 50% a base de algodon y 50% de otros materiales, con el nuevo estilo "boxy" </p>
+            </section>
+            <aside>
+                <h2>Detalles</h2>
+                <div id="stock">
+                    <p>Cantidad en Stock: XX</p>
+                </div>
+                <div>
+                    <label for="cantidad">Cantidad Deseada:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1">
+                </div>
+                <div>
+                    <label for="color">Color Deseado:</label>
+                    <input type="text" id="color" name="color">
+                </div>
+                <div>
+                    <label for="talle">Talle Deseado:</label>
+                    <input type="text" id="talle" name="talle">
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>
