@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Producto</title>
     <link rel="stylesheet" href="./CSS/producto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Detalles del Producto</h1>
-            <button id="toggleMenu">Menú</button>
-            <nav id="menu">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./cart.html">Ir al Carrito</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <div class="Contenedor_Index">
+            <div class="Imagen_Index"><a href="index.html"><img src="imagenes/clickmarket.png" alt="Logo ClickMarket" class="Logo_Index"></a></div>
+            <div id="Item_Index"><a href="category.html" id="Link_Index">ÉLECTRONICA</a></div>
+            <div id="Item_Index"><a href="category.html" id="Link_Index">ACCESORIOS</a></div>
+            <div id="Item_Index"><a href="category.html" id="Link_Index">ROPA (HOMBRE)</a></div>
+            <div id="Item_Index"><a href="category.html" id="Link_Index">ROPA (MUJER)</a></div>
+            <div id="Item_Index"><a href="login.html" id="Link_Index">LOGIN</a></div>
+        </div>
         <main>
             <section id="producto">
                 <h2>Remera boxy fit</h2>
-                <button>Agregar al Carrito</button>
-                <img src="" alt="Imagen del Producto">
-                <p id="descripcion">Una remera hecha 50% a base de algodon y 50% de otros materiales, con el nuevo estilo "boxy" </p>
+                <img src="./Imagenes/televisor.png" alt="Imagen del Producto" class="Televisor">
+                <a href="./cart.html"><button>Agregar al Carrito</button></a>
+                <p id="descripcion">Televisores Smart con distintos tipos de resoluciones y displays </p>
             </section>
             <aside>
                 <h2>Detalles</h2>
@@ -35,12 +36,21 @@
                     <input type="number" id="cantidad" name="cantidad" min="1">
                 </div>
                 <div>
-                    <label for="color">Color Deseado:</label>
-                    <input type="text" id="color" name="color">
+                    <label for="color">Modelo :</label>
+                    <select id="color" name="color">
+                        <option value="Blanco">Smart Curve Display</option>
+                        <option value="Negro">Smart 4K Max Resolution</option>
+                        <option value="Gris">Smart full HD</option>
+                    </select>
                 </div>
                 <div>
-                    <label for="talle">Talle Deseado:</label>
-                    <input type="text" id="talle" name="talle">
+                    <label for="talle">Display :</label>
+                    <select id="talle" name="talle">
+                        <option value="S">30 Pulgadas</option>
+                        <option value="M">45 Pulgadas</option>
+                        <option value="L">60 Pulgadas</option>
+                        <option value="XL">75 Pulgadas</option>
+                    </select>
                 </div>
             </aside>
         </main>
