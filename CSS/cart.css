@@ -3,31 +3,16 @@ body {
     background-color: beige;
 }
 
-footer {
+.pagacon {
     display: flex;
     flex-direction: row;
+    margin-top: 200px;
+    margin-left: 900px;
 }
 
 .Imagenes_cart{
     width:auto;
     height: 50px;
-}
-
-.index_home{
-    position: absolute;
-    top: 35px;
-    right: 100px;
-    text-decoration: none;
-    color: #333;
-   
-}
-
-.index_login{
-    position: absolute;
-    top: 35px;
-    right: 20px;
-    text-decoration: none;
-    color:#333;
 }
 
 .titulo{
@@ -37,29 +22,24 @@ footer {
 }
 
 .control{
-width: auto;
-height: 150px;
+    width: auto;
+    height: 150px;
 }
 
 .television{
-width: auto;
-height: 150px
+    width: auto;
+    height: 150px
+
 }
 
-.contenedor_carritoplay{
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
 
 #contenedor_carritofotos{
     display: flex;
     flex-direction: column;
     flex: 1;
     flex-wrap: nowrap;
-    border: 3px solid rgb(0, 162, 255);
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 5px;
     margin: 10px;
 }
@@ -72,6 +52,37 @@ justify-content: center;
   
 .Imagen_carro {
     width: auto;
-    height: 79px;
+    height: 80px;
   }
-  
+
+.Contenedor_Index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(0, 162, 255);
+    background-color: rgb(0, 162, 255);
+}
+
+.total_carrito{
+    margin-top: -600px;
+    margin-left: 1150px;
+    font-size: larger;
+}
+
+.boton_pagar {
+    background-color: rgb(0, 162, 255);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: -300px;
+    margin-left: 1150px;
+}
+
+.tucarrito{
+right: 15px;
+}
