@@ -3,22 +3,234 @@
     <head>
         <meta charset="utf-8">
         <title> Click Market </title>
-        <link href="./css/index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
     </head>
-    <body class="cuerpo_html">
+    <body>
         <header>
             <div class="Contenedor_Index">
-                <div id="Item_Index"><a href="index.html"><img src="imagenes/clickmarket.png" alt="Logo ClickMarket" class="Logo_Index"></a></div>
-                <div id="Item_Index"><a href="category.html">Électronica</a></div>
-                <div id="Item_Index"><a href="category.html">Accesorios</a></div>
-                <div id="Item_Index"><a href="category.html">Ropa (Hombre)</a></div>
-                <div id="Item_Index"><a href="category.html">Ropa (Mujer)</a></div>
-                <div id="Item_Index"><a href="login.html">Login</a></div>
+                <div class="Imagen_Index"><a href="index.html"><img src="imagenes/clickmarket.png" alt="Logo ClickMarket" class="Logo_Index"></a></div>
+                <div id="Item_Index"><a href="category.html" id="Link_Index">ÉLECTRONICA</a></div>
+                <div id="Item_Index"><a href="category.html" id="Link_Index">ACCESORIOS</a></div>
+                <div id="Item_Index"><a href="category.html" id="Link_Index">ROPA (HOMBRE)</a></div>
+                <div id="Item_Index"><a href="category.html" id="Link_Index">ROPA (MUJER)</a></div>
+                <div id="Item_Index"><a href="login.html" id="Link_Index">LOGIN</a></div>
+                <div id="Item_Index"><a href="cart.html" id="Link_Index">CARRITO</a></div>
             </div>
         </header>
-        <h1 class="titulo"> Click Market </h1>
+        <h1 class="titulos"> CLICK MARKET </h1>
         <h4 class="subtitulo"> Lo que quieras, a un click. </h4>
-        
+        <hr>
+        <h2 class="titulos">Electronica</h2>
+        <div class="Contenedor_Productos">
+            <div id="Contenedor_Items">
+                <img src="imagenes/ps5.png" class="Imagen_Electronica" alt="Imagen Control PS5">
+                <h3>Control Remoto PS5</h3>
+                <p>Control Inalambrico de Dispositivo PS5</p>
+                <p>$40 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/televisor.png" class="Imagen_Electronica" alt="Smart TV OLG">
+                <h3>Televisor OLG 4K </h3>
+                <p>SmartTV de "X" Pulgadas</p>
+                <p>$150 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/thermomix.png" class="Imagen_Electronica" alt="Imagen ThermoMix">
+                <h3>ThermoMix Cocina</h3>
+                <p>Maquina ThermoMix para cocinar en el Siglo 21</p>
+                <p>$100 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/roomba.png" class="Imagen_Electronica" alt="Imagen Roomba">
+                <h3>Aspiradora "Roomba"</h3>
+                <p>Aspiradora automatica inalambrica automatizada</p>
+                <p>$80 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/proyector.png" class="Imagen_Electronica" alt="Imagen Proyector">
+                <h3>Proyector Portatil</h3>
+                <p>Proyector Portatil para reproducir via Bluetooth</p>
+                <p>$60 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/iphone.png" class="Imagen_Electronica" alt="Imagen iPhone 15">
+                <h3>iPhone 15</h3>
+                <p>Celular de ultima gama de Apple</p>
+                <p>$1.200 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+        </div>
+        <hr>
+        <h2 class="titulos">Accesorios</h2>
+        <div class="Contenedor_Productos">
+            <div id="Contenedor_Items">
+                <img src="imagenes/relojcasio.png" class="Imagen_Electronica" alt="Imagen Reloj Casio">
+                <h3>Reloj Casio</h3>
+                <p>Reloj Digital de muñeca color plateado</p>
+                <p>$50 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/cinturon.png" class="Imagen_Electronica" alt="Imagen Cinturon">
+                <h3>Cinturon</h3>
+                <p>Cinturon de Cuero marrón con detalles plateados</p>
+                <p>$20 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/anillo.png" class="Imagen_Electronica" alt="Imagen Anillo">
+                <h3>Anillo</h3>
+                <p>Anillo de Plata con detalles en negro</p>
+                <p>$45 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/anteojos.png" class="Imagen_Electronica" alt="Imagen Anteojos">
+                <h3>Anteojos de Sol</h3>
+                <p>Anteojos de Sol polarizados color negro</p>
+                <p>$50 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/gorra.png" class="Imagen_Electronica" alt="Imagen Proyector">
+                <h3>Gorra Deportiva</h3>
+                <p>Gorra New Era color negra con detalles en blanco</p>
+                <p>$25 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/morral.png" class="Imagen_Electronica" alt="Imagen Morral">
+                <h3>Morral</h3>
+                <p>Morral color crema con cinta colgante negra</p>
+                <p>$35 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+        </div>
+        <hr>
+        <h2 class="titulos">Ropa (Hombre)</h2>
+        <div class="Contenedor_Productos">
+            <div id="Contenedor_Items">
+                <img src="imagenes/buzo_hombre.png" class="Imagen_Electronica" alt="Imagen Buzo Hombre">
+                <h3>Buzo</h3>
+                <p>Buzo color azul de Hombre, con cierre</p>
+                <p>$25 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/jeans_hombre.png" class="Imagen_Electronica" alt="Imagen Jeans">
+                <h3>Jeans</h3>
+                <p>Jeans sueltos color celeste</p>
+                <p>$30 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/mangalarga_hombre.png" class="Imagen_Electronica" alt="Imagen Manga Larga">
+                <h3>Remera Manga Larga</h3>
+                <p>Remera manga larga a rayas horizontales color crema y verde</p>
+                <p>$20 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/polo_hombre.png" class="Imagen_Electronica" alt="Imagen Remera Polo">
+                <h3>Remera Polo</h3>
+                <p>Remera polo de hombre color crema</p>
+                <p>$25 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/medias_hombre.png" class="Imagen_Electronica" alt="Imagen Medias">
+                <h3>Medias</h3>
+                <p>Medias negras estilo 3/4tos</p>
+                <p>$5 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/zapatillas_hombre.png" class="Imagen_Electronica" alt="Imagen Zapatillas">
+                <h3>Zapatillas</h3>
+                <p>Zapatillas de hombre marca Adidas, color gris</p>
+                <p>$110 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+        </div>
+        <hr>
+        <h2 class="titulos">Ropa (Mujer)</h2>
+        <div class="Contenedor_Productos">
+            <div id="Contenedor_Items">
+                <img src="imagenes/camisa_mujer.png" class="Imagen_Electronica" alt="Imagen Camisa Mujer">
+                <h3>Camisa</h3>
+                <p>Camisa de mujer celeste, a rayas verticales</p>
+                <p>$25 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/remera_mujer.png" class="Imagen_Electronica" alt="Imagen Remera Mujer">
+                <h3>Remera</h3>
+                <p>Remera celeste de mujer, cropped</p>
+                <p>$15 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/jeans_mujer.png" class="Imagen_Electronica" alt="Imagen Jeans Mujer">
+                <h3>Jeans</h3>
+                <p>Jeans celestes con corte ancho</p>
+                <p>$25 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/saco_mujer.png" class="Imagen_Electronica" alt="Imagen Saco">
+                <h3>Saco</h3>
+                <p>Saco marron de mujer para el invierno</p>
+                <p>$60 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/blusa_mujer.png" class="Imagen_Electronica" alt="Imagen Blusa">
+                <h3>Blusa</h3>
+                <p>Blusa de mujer color celeste, con botones</p>
+                <p>$25 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+            <div id="Contenedor_Items">
+                <img src="imagenes/sandalias_mujer.png" class="Imagen_Electronica" alt="Imagen Sandalias">
+                <h3>Sandalias</h3>
+                <p>Sandalias estilo chatas color negro con malla</p>
+                <p>$45 (dolares)</p>
+                <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
+                <a href="producto.html">Ver Mas Sobre este Producto</a>
+            </div>
+        </div>
+        <hr>
         <footer> 
             <p>Lucas Habib, Cristobal Camdessus y Benjamin Orchansky</p>
         </footer>

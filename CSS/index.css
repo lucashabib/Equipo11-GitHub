@@ -1,24 +1,80 @@
-body {
-    font-family: Arial, sans-serif;
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: rgb(255, 253, 208);
 }
-
-.cuerpo_html{
-    background-color:beige;
-}
-
+  
 .Contenedor_Index{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid rgb(242, 133, 0);
+    border: 3px solid rgb(189, 154, 118);
+    background-color: rgb(189, 154, 118);
 }
-
+  
+.Imagen_Index{
+    flex: 2;
+}
+  
 #Item_Index{
-    flex: 1;
+    flex: auto;
     padding: 10px;
-    border: 1px solid rgb(242, 133, 0);
+    border: 1px solid rgb(189, 154, 118);
+    background-color: rgb(189, 154, 118);
+    font-size: 20px;
+}
+  
+#Link_Index{
+    text-decoration: none;
+    text-decoration: rgb(189, 154, 118);
+}
+  
+footer{
+    background-color: rgb(189, 154, 118);
+}
+  
+.Contenedor_Productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+.fila{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+}
+  
+hr{
+    border: none;
+    border-top: 3px solid  rgb(189, 154, 118);
+    width: 75%;
+    margin: 20px auto;
+}
+  
+#Contenedor_Items{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    text-align: center;
+}
+  
+.Imagen_Electronica{
+    width: auto;
+    height: 100px;
+}
+  
+.Imagen_Carrito{
+    width: 20px;
+    height: auto;
 }
 
-footer{
-    background-color: rgb(242, 133, 0);
+#texto_carrito{
+    font-size: 12px;
+}
+
+.titulos{
+    text-align: center;
 }

@@ -1,17 +1,14 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
-}
-
-.cuerpo_html{
-    background-color:beige;
+  background-color: rgb(255, 253, 208);
 }
 
 .Contenedor_Index{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid rgb(0, 162, 255);
-    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(189, 154, 118);
+    background-color: rgb(189, 154, 118);
 }
 
 .Imagen_Index{
@@ -19,41 +16,53 @@ body {
 }
 
 #Item_Index{
-    flex: 1;
+    flex: auto;
     padding: 10px;
-    border: 1px solid rgb(0, 162, 255);
-    background-color: rgb(0, 162, 255);
+    border: 1px solid rgb(189, 154, 118);
+    background-color: rgb(189, 154, 118);
     font-size: 20px;
 }
 
 #Link_Index{
     text-decoration: none;
-    text-decoration: rgb(242, 133, 0);
+    text-decoration: rgb(189, 154, 118);
 }
 
 footer{
-    background-color: rgb(242, 133, 0);
+    background-color: rgb(189, 154, 118);
 }
 
 .Contenedor_Productos{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fila{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+}
+
+hr{
+    border: none;
+    border-top: 3px solid  rgb(189, 154, 118);
+    width: 75%;
+    margin: 20px auto;
 }
 
 #Contenedor_Items{
     display: flex;
     flex-direction: column;
     flex: 1;
-    flex-wrap: nowrap;
-    border: 3px solid rgb(0, 162, 255);
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 3px;
 }
 
-.Imagen_ControlPS5{
-    width: 250px;
-    height: auto;
+.Imagen_Electronica{
+    width: auto;
+    height: 100px;
 }
 
 .Imagen_Carrito{
@@ -61,12 +70,6 @@ footer{
     height: auto;
 }
 
-.Imagen_Televisor{
-    width: 250px;
-    height: auto;
-}
-
-.Imagen_ThermoMix{
-    width: 250px;
-    height: auto;
+#texto_carrito{
+    font-size: 12px;
 }
