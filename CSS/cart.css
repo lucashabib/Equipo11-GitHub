@@ -6,8 +6,8 @@ body {
 .pagacon {
     display: flex;
     flex-direction: row;
-    margin-top: 200px;
     margin-left: 900px;
+    margin-top: -50px;
 }
 
 .Imagenes_cart{
@@ -59,30 +59,47 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid rgb(0, 162, 255);
-    background-color: rgb(0, 162, 255);
+    border: 3px solid rgb(189, 154, 118);
+    background-color: rgb(189, 154, 118);
 }
 
+#Item_Index{
+    flex: auto;
+    padding: 10px;
+    border: 1px solid rgb(189, 154, 118);
+    background-color: rgb(189, 154, 118);
+    font-size: 20px;
+}
+
+#Link_Index{
+    text-decoration: none;
+    text-decoration: rgb(189, 154, 118);
+}
+  
+
 .total_carrito{
-    margin-top: -600px;
-    margin-left: 1150px;
-    font-size: larger;
+font-size: larger;
 }
 
 .boton_pagar {
-    background-color: rgb(0, 162, 255);
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: -300px;
-    margin-left: 1150px;
+background-color: rgb(189, 154, 118);
+color: black;
+padding: 15px 20px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+border-radius: 8px;
+cursor: pointer;
+border: none;
 }
 
 .tucarrito{
 right: 15px;
+}
+
+hr {
+border: none;
+    border-top: 3px solid  rgb(189, 154, 118);
+    width: 75%;
+    margin: 20px auto;
 }
