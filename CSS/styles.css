@@ -116,45 +116,11 @@ hr{
 
 /*Producto*/
 
-#menu {
-    display: none;
-}
-
-
-#toggleMenu {
-    background-color:rgb(242, 133, 0);
-    color: rgb(255, 253, 208);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    margin-bottom: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
 
 #producto {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-#producto img {
-    max-width: 100%;
-    height: auto;
     align-items: center;
 }
 
@@ -164,19 +130,10 @@ aside {
     padding: 20px;
 }
 
+
 aside h2 {
     margin-top: 0;
 }
-
-
-#producto button {
-    background-color: rgb(242, 133, 0);
-    color: rgb(255, 253, 208);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
 
 
 input[type="number"],
@@ -185,17 +142,6 @@ input[type="text"] {
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
-}
-
-
-
-@media (max-width: 768px) {
-    #menu {
-        display: block;
-    }
-    #toggleMenu {
-        display: none;
-    }
 }
 
 .Televisor{
@@ -279,3 +225,9 @@ right: 15px;
 /*Recover*/
 
 /*Register*/
+
+/*Responsive breakpoint width 775px*/
+
+@media (max-width: 775px){
+
+}
