@@ -9,14 +9,15 @@ body{
   
 .Contenedor_Index{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
     align-items: center;
     border: 3px solid rgb(255, 145, 0);
     background-color: rgb(255, 145, 0);
 }
   
 .Imagen_Index{
-    flex: 3;
+    order: -1;
 }
 
 .Logo_Index{
@@ -30,6 +31,7 @@ body{
     border: 1px solid rgb(255, 145, 0);
     background-color: rgb(255, 145, 0);
     font-size: 20px;
+    text-align: center;
 }
   
 #Link_Index{
@@ -191,8 +193,8 @@ input[type="text"] {
 .pagacon {
     display: flex;
     flex-direction: row;
-    margin-left: 900px;
     margin-top: -50px;
+    justify-content: flex-end; 
 }
 
 .Imagenes_cart{
@@ -226,8 +228,53 @@ right: 15px;
 
 /*Register*/
 
-/*Responsive breakpoint width 775px*/
+/*Responsive breakpoint width 500px*/
 
-@media (max-width: 775px){
+/*Header*/
+@media (max-width: 500px) {
+    .Contenedor_Index {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
+    .Logo_Index {
+        height: 100px;
+    }
 
+    .Imagen_Index {
+        order: -1;
+    }
+
+    #Item_Index {
+        width: 100%;
+        text-align: right; 
+        padding: 5px;
+    }
+
+    .titulos {
+        font-size: 30px; 
+    }
+
+    .subtitulo {
+        font-size: 16px; 
+    }
+    .pagacon {
+        margin-top: 10px;
+    }
+}
+
+/*Producto*/
+
+@media (max-width: 360px){
+
+    .Televisor{
+        width: 300px;
+        height: auto;
+    }
+    .television{
+        height: 130px;
+    }
+    .control{
+        height: 130px;
+    }
 }
