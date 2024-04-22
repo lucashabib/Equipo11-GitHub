@@ -9,14 +9,15 @@ body{
   
 .Contenedor_Index{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
     align-items: center;
     border: 3px solid rgb(255, 145, 0);
     background-color: rgb(255, 145, 0);
 }
 
 .Imagen_Index{
-    flex: 3;
+    order: -1;
 }
 
 .Logo_Index{
@@ -31,6 +32,7 @@ body{
     background-color: rgb(255, 145, 0);
     border-radius: 10px;
     font-size: 20px;
+    text-align: center;
 }
   
 #Link_Index{
@@ -90,11 +92,12 @@ hr{
   
 .fila{
     display: flex;
+    flex-wrap: wrap;
     padding: 15px;
     width: 100%;
 } /*Comparten Index y Category*/
    
-#Contenedor_Items{
+.Contenedor_Items{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -151,6 +154,7 @@ hr{
 
 /*Producto*/
 
+<<<<<<< HEAD
 #menu {
     display: none;
 }
@@ -176,6 +180,8 @@ nav ul li a {
     text-decoration: none;
     color: #000;
 }
+=======
+>>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 
 #producto {
     margin-bottom: 20px;
@@ -184,21 +190,26 @@ nav ul li a {
     align-items: center;
 }
 
+<<<<<<< HEAD
 #producto img {
     max-width: 100%;
     height: auto;
     align-items: center;
 }
+=======
+>>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 
 aside {
     background-color: rgb(255, 225, 188);
     padding: 20px;
 }
 
+
 aside h2 {
     margin-top: 0;
 }
 
+<<<<<<< HEAD
 #producto button {
     background-color: rgb(255, 145, 0);
     color: rgb(255, 253, 208);
@@ -212,6 +223,8 @@ aside h2 {
 #producto button:hover{
     background-color: rgb(255, 105, 0);
 }
+=======
+>>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 
 input[type="number"],
 input[type="text"] {
@@ -221,6 +234,7 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
     #menu {
         display: block;
@@ -230,6 +244,8 @@ input[type="text"] {
     }
 }
 
+=======
+>>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 .Televisor{
         width: 350px;
         height: auto;
@@ -277,8 +293,8 @@ input[type="text"] {
 .pagacon {
     display: flex;
     flex-direction: row;
-    margin-left: 900px;
     margin-top: -50px;
+    justify-content: flex-end; 
 }
 
 .Imagenes_cart{
@@ -410,6 +426,7 @@ input[type="password"] {
 
 /*Recover*/
 
+<<<<<<< HEAD
 input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -469,4 +486,57 @@ input[type="password"] {
 
 .links_register a:hover{
     color: blue;
+=======
+/*Register*/
+
+/*Responsive breakpoint width 500px*/
+
+/*Header*/
+@media screen and (max-width: 500px) {
+    .Contenedor_Index {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
+    .Logo_Index {
+        height: 100px;
+    }
+
+    .Imagen_Index {
+        order: -1;
+    }
+
+    #Item_Index {
+        width: 100%;
+        text-align: right; 
+        padding: 5px;
+    }
+
+    .titulos {
+        font-size: 30px; 
+    }
+
+    .subtitulo {
+        font-size: 16px; 
+    }
+    .pagacon {
+        margin-top: 10px;
+    }
+}
+
+/*Producto*/
+
+@media screen and (max-width: 320px){
+
+    .Televisor{
+        width: 300px;
+        height: auto;
+    }
+    .television{
+        height: 130px;
+    }
+    .control{
+        height: 130px;
+    }
+>>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 }
