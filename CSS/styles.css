@@ -154,7 +154,6 @@ hr{
 
 /*Producto*/
 
-<<<<<<< HEAD
 #menu {
     display: none;
 }
@@ -180,8 +179,6 @@ nav ul li a {
     text-decoration: none;
     color: #000;
 }
-=======
->>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 
 #producto {
     margin-bottom: 20px;
@@ -190,14 +187,11 @@ nav ul li a {
     align-items: center;
 }
 
-<<<<<<< HEAD
 #producto img {
     max-width: 100%;
     height: auto;
     align-items: center;
 }
-=======
->>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 
 aside {
     background-color: rgb(255, 225, 188);
@@ -209,7 +203,6 @@ aside h2 {
     margin-top: 0;
 }
 
-<<<<<<< HEAD
 #producto button {
     background-color: rgb(255, 145, 0);
     color: rgb(255, 253, 208);
@@ -223,8 +216,6 @@ aside h2 {
 #producto button:hover{
     background-color: rgb(255, 105, 0);
 }
-=======
->>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 
 input[type="number"],
 input[type="text"] {
@@ -234,7 +225,6 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 @media (max-width: 768px) {
     #menu {
         display: block;
@@ -244,8 +234,6 @@ input[type="text"] {
     }
 }
 
-=======
->>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 .Televisor{
         width: 350px;
         height: auto;
@@ -268,15 +256,29 @@ input[type="text"] {
 
 }
 
+.contenedor_carritoplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
 #contenedor_carritofotos{
     display: flex;
     flex-direction: column;
-    flex: 1;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 5px;
-    margin: 10px;
+    align-items: center;
+}
+
+#producto_carritos{
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+#precio_carritos{
+    margin: 5px;
+    font-size: 20px;
+    color: black;
 }
 
 .foto_carro {
@@ -303,19 +305,28 @@ input[type="text"] {
 }
 
 .total_carrito{
-    font-size: larger;
+    font-size: 20px;
+    text-align: center;
 }
 
 .boton_pagar {
-background-color: rgb(189, 154, 118);
-color: black;
-padding: 15px 20px;
-text-align: center;
-display: inline-block;
-font-size: 20px;
-border-radius: 8px;
-cursor: pointer;
-border: none;
+    display: flex;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 145, 0);
+    transition: background-color 0.25s ease;
+}
+
+.boton_pagar:hover{
+    background-color: rgb(255, 105, 0);
 }
 
 .tucarrito{
@@ -426,7 +437,6 @@ input[type="password"] {
 
 /*Recover*/
 
-<<<<<<< HEAD
 input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -486,57 +496,4 @@ input[type="password"] {
 
 .links_register a:hover{
     color: blue;
-=======
-/*Register*/
-
-/*Responsive breakpoint width 500px*/
-
-/*Header*/
-@media screen and (max-width: 500px) {
-    .Contenedor_Index {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: flex-start;
-    }
-    .Logo_Index {
-        height: 100px;
-    }
-
-    .Imagen_Index {
-        order: -1;
-    }
-
-    #Item_Index {
-        width: 100%;
-        text-align: right; 
-        padding: 5px;
-    }
-
-    .titulos {
-        font-size: 30px; 
-    }
-
-    .subtitulo {
-        font-size: 16px; 
-    }
-    .pagacon {
-        margin-top: 10px;
-    }
-}
-
-/*Producto*/
-
-@media screen and (max-width: 320px){
-
-    .Televisor{
-        width: 300px;
-        height: auto;
-    }
-    .television{
-        height: 130px;
-    }
-    .control{
-        height: 130px;
-    }
->>>>>>> 196baee124a8b87e4df6d76838cd35a1448e2385
 }
