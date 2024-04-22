@@ -3,6 +3,8 @@
 body{
     font-family: "Roboto Condensed", sans-serif;
     background-color: rgb(255, 253, 208);
+    margin: 0;
+    padding: 0;
 }
   
 .Contenedor_Index{
@@ -110,5 +112,164 @@ hr{
     text-align: center;
 }
 
-/*Category*/
+/*Category comparte todo el CSS con Index*/
 
+/*Producto*/
+
+#menu {
+    display: none;
+}
+
+
+#toggleMenu {
+    background-color:rgb(242, 133, 0);
+    color: rgb(255, 253, 208);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+#producto {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#producto img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+
+aside {
+    background-color: rgb(255, 225, 188);
+    padding: 20px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+
+#producto button {
+    background-color: rgb(242, 133, 0);
+    color: rgb(255, 253, 208);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+    #toggleMenu {
+        display: none;
+    }
+}
+
+.Televisor{
+        width: 350px;
+        height: auto;
+}
+
+#cantidad{
+    width: 200px;
+}
+
+/*Cart*/
+
+.control{
+    width: auto;
+    height: 150px;
+}
+
+.television{
+    width: auto;
+    height: 150px
+
+}
+
+#contenedor_carritofotos{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 10px;
+}
+
+.foto_carro {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+  
+.Imagen_carro {
+    width: auto;
+    height: 80px;
+}
+
+.pagacon {
+    display: flex;
+    flex-direction: row;
+    margin-left: 900px;
+    margin-top: -50px;
+}
+
+.Imagenes_cart{
+    width:auto;
+    height: 50px;
+}
+
+.total_carrito{
+    font-size: larger;
+}
+
+.boton_pagar {
+background-color: rgb(189, 154, 118);
+color: black;
+padding: 15px 20px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+border-radius: 8px;
+cursor: pointer;
+border: none;
+}
+
+.tucarrito{
+right: 15px;
+}
