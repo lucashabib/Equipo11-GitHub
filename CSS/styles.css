@@ -82,11 +82,12 @@ hr{
   
 .fila{
     display: flex;
+    flex-wrap: wrap;
     padding: 15px;
     width: 100%;
 } /*Comparten Index y Category*/
    
-#Contenedor_Items{
+.Contenedor_Items{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -231,7 +232,7 @@ right: 15px;
 /*Responsive breakpoint width 500px*/
 
 /*Header*/
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .Contenedor_Index {
         flex-direction: row; 
         justify-content: space-between; 
@@ -265,7 +266,7 @@ right: 15px;
 
 /*Producto*/
 
-@media (max-width: 360px){
+@media screen and (max-width: 320px){
 
     .Televisor{
         width: 300px;
