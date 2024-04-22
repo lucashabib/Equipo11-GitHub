@@ -7,25 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/recover.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="imagenes/clickmarket.png">
 </head>
-<body>
-    <a href="./index.html" class="home-link">HOME</a>
-    <div class="container">
-        <div class="login-box">
-            <h2>Recuperar Contraseña</h2>
-            <div class="form-group">
-                <label for="email">Ingrese su Email:</label>
+<body class="body_login">
+    <header class="header_login">
+        <h1 class="titulos"><a href="index.html" id="Titulo_Principal"> CLICK MARKET </a></h1>
+        <h4 class="subtitulo"> Lo que quieras, a un click. </h4>
+        <a href="./index.html" class="home_link">HOME</a>
+    </header>
+    <div class="login_container">
+        <div class="login_box">
+            <h2 class="titulo_login">Recuperar Contraseña</h2>
+            <div class="form_group">
+                <label class="login_datos" for="email">Ingrese su Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
             <p class="instructions">Te enviaremos un email con instrucciones para recuperarla</p>
-            <button type="submit">Continuar</button>
-            <div class="footer">
-                <p>¿No necesitas recuperar tu cuenta?<a href="./login.html">Iniciar sesión</a></p>
+            <button class="login_button"type="submit">Continuar</button>
+            <div class="links_recover">
+                <p>¿No necesitas recuperar tu cuenta?<a href="./login.html"> Iniciar sesión</a></p>
                 <p>¿No tienes una cuenta?<a href="./register.html"> Regístrate aquí</a></p>
             </div>
         </div>
     </div>
+    <footer> 
+        <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
+    </footer>
 </body>
 </html>

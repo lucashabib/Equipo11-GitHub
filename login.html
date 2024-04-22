@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="./css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="imagenes/clickmarket.png">
 </head>
-<body>
-    <a href="./index.html" class="home-link">HOME</a>
-    <div class="container">
-        <div class="login-box">
-            <h2>Iniciar Sesión</h2>
-                <div class="form-group">
-                    <label for="username">Usuario:</label>
+<body class="body_login">
+    <header class="header_login">
+        <h1 class="titulos"><a href="index.html" id="Titulo_Principal"> CLICK MARKET </a></h1>
+        <h4 class="subtitulo"> Lo que quieras, a un click. </h4>
+        <a href="./index.html" class="home_link">HOME</a>
+    </header>
+    <div class="login_container">
+        <div class="login_box">
+            <h2 class="titulo_login">Iniciar Sesión</h2>
+                <div class="form_group">
+                    <label class="login_datos"for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
-                <div class="form-group">
-                    <label for="password">Contraseña:</label>
+                <div class="form_group">
+                    <label class="login_datos"for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit">Iniciar Sesión</button>
+                <button class="login_button"type="submit">Iniciar Sesión</button>
             </form>
-            <div class="footer">
+            <div class="links_login">
                 <p>¿No tienes una cuenta? <a href="./register.html">Regístrate aquí</a></p>
                 <p><a href="./recover.html">¿Olvidaste tu contraseña?</a></p>
             </div>
         </div>
     </div>
+    <footer> 
+        <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
+    </footer>
 </body>
 </html>
