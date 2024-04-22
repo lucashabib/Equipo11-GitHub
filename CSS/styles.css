@@ -1,0 +1,114 @@
+/*Header*/
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: rgb(255, 253, 208);
+}
+  
+.Contenedor_Index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(255, 145, 0);
+    background-color: rgb(255, 145, 0);
+}
+  
+.Imagen_Index{
+    flex: 3;
+}
+
+.Logo_Index{
+    height: 150px;
+    width: auto;
+}
+
+#Item_Index{
+    flex: auto;
+    padding: 10px;
+    border: 1px solid rgb(255, 145, 0);
+    background-color: rgb(255, 145, 0);
+    font-size: 20px;
+}
+  
+#Link_Index{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#Titulo_Principal{
+    font-size: 50px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.subtitulo{
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: rgb(255, 145, 0);
+}
+  
+.texto_footer{
+    text-align: center;
+}
+
+/*General*/
+
+hr{
+    border: none;
+    border-top: 3px solid  rgb(255, 145, 0);
+    width: 75%;
+    margin: 20px auto;
+}
+
+/*Index*/
+
+.Contenedor_Productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} /*Comparten Index y Category*/
+  
+.fila{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+} /*Comparten Index y Category*/
+   
+#Contenedor_Items{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    text-align: center;
+} /*Comparten Index y Category*/
+
+.Imagen_Electronica{
+    width: auto;
+    height: 100px;
+} /*Comparten Index y Category*/
+  
+.Imagen_Carrito{
+    width: 20px;
+    height: auto;
+} /*Comparten Index y Category*/
+
+#texto_carrito{
+    font-size: 12px;
+} /*Comparten Index y Category*/
+
+.titulos{
+    text-align: center;
+}
+
+/*Category*/
+
