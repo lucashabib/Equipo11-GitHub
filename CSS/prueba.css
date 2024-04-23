@@ -7,41 +7,46 @@ body{
     padding: 0;
 }
   
-#nav_index {
-    background-color: rgb(255, 145, 0);
-    padding: 10px;
-  }
-  
-  #menu_index {
+.Contenedor_Index{
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    list-style: none;
-    padding: 0; 
-    margin: 0; 
-  }
-  
-  #menu_index li {
-    margin-right: 100px; 
-  }
-  
-  .link_index {
-    text-decoration: none; 
-    color: black; 
-    font-weight: bold;
-    transition: font-size 0.25s ease; 
-  }
-  
-  .link_index:hover {
-    font-size: 25px;
-  }
-  
-  #logo_index {
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: center;
+    border: 3px solid rgb(255, 145, 0);
+    background-color: rgb(255, 145, 0);
+}
+
+.Imagen_Index{
+    order: -1;
+}
+
+.Logo_Index{
     height: 150px;
     width: auto;
-  }
+}
 
-.Titulo_Principal{
+#Item_Index{
+    flex: auto;
+    padding: 10px;
+    border: 1px solid rgb(255, 145, 0);
+    background-color: rgb(255, 145, 0);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+  
+#Link_Index{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: font-size 0.25s ease;
+}
+
+#Link_Index:hover{
+    font-size: 25px;
+}
+
+#Titulo_Principal{
     font-size: 50px;
     margin-top: 5px;
     text-decoration: none;
@@ -443,35 +448,27 @@ input[type="password"] {
     color: blue;
 }
 
-/*Responsive breakpoint width 500px*/
-
 @media (max-width: 500px) {
-    #nav_index {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-    
-      #menu_index {
-        flex-direction: column;
+    .Contenedor_Index {
+        flex-direction: row; 
+        justify-content: space-between; 
         align-items: flex-start;
-        justify-content: flex-start;
-      }
-    
-      #menu_index li {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-    
-      #logo_index {
-        height: 120px;
-        position: absolute;
-        right: 40px;
-        top: 40px;
-      }
-    
-      .link_index {
-        font-size: 16px; 
-      }
+    }
+
+    .Logo_Index {
+        height: 100px;
+    }
+
+    .Imagen_Index {
+        order: -1;
+    }
+
+    #Item_Index {
+        width: 100%;
+        text-align: right; 
+        padding: 5px;
+        box-sizing: border-box;
+    }
 
     .titulos {
         font-size: 30px; 
@@ -503,12 +500,12 @@ input[type="password"] {
     }
 }
 
-#nav_index {
+.nav_index {
     background-color: rgb(255, 145, 0); /* Ajusta el fondo para la navegación */
     padding: 10px; /* Espaciado interno */
   }
   
-  #menu_index {
+  .menu_index {
     display: flex; /* Para activar Flexbox */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Alinear verticalmente */
@@ -517,7 +514,7 @@ input[type="password"] {
     margin: 0; /* Quita el margen por defecto de `<ul>` */
   }
   
-  #menu_index li {
+  .menu_index li {
     margin-right: 100px; /* Espaciado entre elementos */
   }
   
@@ -532,58 +529,36 @@ input[type="password"] {
     font-size: 25px; /* Cambia tamaño en hover */
   }
   
-  #logo_index {
+  .logo_index {
     height: 150px; /* Altura del logo */
     width: auto; /* Mantiene proporciones */
   }
   
   @media (max-width: 500px) {
-    .Contenedor_Index {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: flex-start;
+    .nav_index {
+      flex-direction: row; /* Mantiene la orientación horizontal */
+      justify-content: space-between; /* Separa la imagen de la lista */
     }
-    .Logo_Index {
-        height: 100px;
+  
+    .menu_index {
+      flex-direction: column; /* Los elementos se apilan uno sobre otro */
+      align-items: flex-start; /* Alinea al inicio del eje horizontal */
+      justify-content: flex-start;
     }
-
-    .Imagen_Index {
-        order: -1;
+  
+    .menu_index li {
+      margin-right: 0;
+      margin-bottom: 10px; /* Añade espacio entre elementos */
     }
-
-    #Item_Index {
-        width: 100%;
-        text-align: right; 
-        padding: 5px;
+  
+    .logo_index {
+      height: 120px; /* Reduce el tamaño del logo para pantallas pequeñas */
+      position: absolute;
+      right: 40px;
+      top: 40px;
     }
-
-    .titulos {
-        font-size: 30px; 
+  
+    .link_index {
+      font-size: 16px; /* Ajusta el tamaño de la fuente para dispositivos pequeños */
     }
-
-    .subtitulo {
-        font-size: 16px; 
-    }
-    .pagacon {
-        margin-top: 10px;
-        align-items: center;
-    }
-
-    .home_link {
-        margin-top: 80px;
-    }
-}
-
-@media (max-width: 320px){
-
-    .Televisor{
-        width: 300px;
-        height: auto;
-    }
-    .television{
-        height: 130px;
-    }
-    .control{
-        height: 130px;
-    }
-}
+  }
