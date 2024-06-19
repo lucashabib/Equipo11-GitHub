@@ -85,6 +85,12 @@ hr{
     flex-wrap: wrap;
 } /*Comparten Index y Category*/
   
+.Contenedor_electronica{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} 
+  
 .fila{
     display: flex;
     flex-wrap: wrap;
