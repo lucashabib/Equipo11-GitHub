@@ -7,40 +7,6 @@ body{
     padding: 0;
 }
   
-#nav_index {
-    background-color: rgb(255, 145, 0);
-    padding: 10px;
-  }
-  
-  #menu_index {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    list-style: none;
-    padding: 0; 
-    margin: 0; 
-  }
-  
-  #menu_index li {
-    margin-right: 100px; 
-  }
-  
-  .link_index {
-    text-decoration: none; 
-    color: black; 
-    font-weight: bold;
-    transition: font-size 0.25s ease; 
-  }
-  
-  .link_index:hover {
-    font-size: 25px;
-  }
-  
-  #logo_index {
-    height: 150px;
-    width: auto;
-  }
-
 .Titulo_Principal{
     font-size: 50px;
     margin-top: 5px;
@@ -114,6 +80,13 @@ hr{
     text-align: center;
 } /*Comparten Index y Category*/
 
+.precio_producto{
+    display: flex;
+    justify-content: end;
+    padding: 0%;
+    margin: 0;
+}
+
 .Imagen_Electronica{
     width: auto;
     height: 100px;
@@ -137,6 +110,8 @@ hr{
     text-decoration: none;
     color: black;
     transition: color 0.25s ease;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 
 #Detalles_Producto:hover{
@@ -220,19 +195,19 @@ input[type="text"] {
     padding: 10px;
 }
 
-#contenedor_carritofotos{
+.contenedor_carritofotos{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#producto_carritos{
+.producto_carritos{
     margin: 5px;
     font-size: 20px;
     color: black;
 }
 
-#precio_carritos{
+.precio_carritos{
     margin: 5px;
     font-size: 20px;
     color: black;
@@ -455,106 +430,83 @@ input[type="password"] {
     color: blue;
 }
 
-/*Responsive breakpoint width 500px*/
+  .link_index {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    transition: font-size 0.25s ease; 
+  }
+  
 
-@media (max-width: 500px) {
+  #logo_index {
+    height: 150px; 
+    width: auto; 
+  }
+
+#nav_index {
+    background-color: rgb(255, 145, 0); 
+    padding: 10px; 
+  }
+  
+  #menu_index {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  #menu_index li {
+    margin-right: 5%; 
+  }
+  
+  
+  .link_index:hover {
+    font-size: 25px;
+  }
+  
+  #logo_index {
+    height: 150px; 
+    width: auto; 
+  }
+  
+  @media (max-width: 500px){
+    .Contenedor_Index {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
+
+
     #nav_index {
         flex-direction: row;
         justify-content: space-between;
       }
     
-      #menu_index {
+    #menu_index {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
       }
     
-      #menu_index li {
+    #menu_index li {
         margin-right: 0;
         margin-bottom: 10px;
       }
     
-      #logo_index {
+    #logo_index {
         height: 120px;
         position: absolute;
         right: 40px;
         top: 40px;
       }
     
-      .link_index {
+    .link_index {
         font-size: 16px; 
       }
 
-    .titulos {
-        font-size: 30px; 
-    }
-
-    .subtitulo {
-        font-size: 16px; 
-    }
-    .pagacon {
-        margin-top: 10px;
-    }
-
-    .home_link {
-        margin-top: 80px;
-    }
-}
-
-@media (max-width: 320px){
-
-    .Televisor{
-        width: 300px;
-        height: auto;
-    }
-    .television{
-        height: 130px;
-    }
-    .control{
-        height: 130px;
-    }
-}
-
-#nav_index {
-    background-color: rgb(255, 145, 0); /* Ajusta el fondo para la navegación */
-    padding: 10px; /* Espaciado interno */
-  }
-  
-  #menu_index {
-    display: flex; /* Para activar Flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Alinear verticalmente */
-    list-style: none; /* Quita los puntos de lista */
-    padding: 0; /* Quita el padding por defecto de `<ul>` */
-    margin: 0; /* Quita el margen por defecto de `<ul>` */
-  }
-  
-  #menu_index li {
-    margin-right: 100px; /* Espaciado entre elementos */
-  }
-  
-  .link_index {
-    text-decoration: none; /* Quita subrayado por defecto */
-    color: black; /* Color del texto */
-    font-weight: bold; /* Negrita */
-    transition: font-size 0.25s ease; /* Transición suave */
-  }
-  
-  .link_index:hover {
-    font-size: 25px; /* Cambia tamaño en hover */
-  }
-  
-  #logo_index {
-    height: 150px; /* Altura del logo */
-    width: auto; /* Mantiene proporciones */
-  }
-  
-  @media (max-width: 500px) {
-    .Contenedor_Index {
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: flex-start;
-    }
     .Logo_Index {
         height: 100px;
     }
@@ -585,6 +537,7 @@ input[type="password"] {
         margin-top: 80px;
     }
 }
+
 
 @media (max-width: 320px){
 

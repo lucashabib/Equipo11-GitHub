@@ -34,3 +34,5 @@ fetch("https://fakestoreapi.com/products/category/electronics")
     .catch(function(error){
         console.log('Error:', error);
     });
+
+    
