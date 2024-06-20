@@ -85,11 +85,7 @@ hr{
     flex-wrap: wrap;
 } /*Comparten Index y Category*/
   
-.Contenedor_electronica{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} 
+
   
 .fila{
     display: flex;
@@ -99,6 +95,16 @@ hr{
 } /*Comparten Index y Category*/
    
 .Contenedor_Items{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    text-align: center;
+} /*Comparten Index y Category*/
+
+.Contenedor_electronica{
     display: flex;
     flex-direction: column;
     flex: 1;
