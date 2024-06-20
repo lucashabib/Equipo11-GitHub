@@ -19,15 +19,16 @@
     <section class="login_container">
         <div class="login_box">
             <h2 class="titulo_login">Iniciar Sesión</h2>
+            <form id="loginForm">
                 <div class="form_group">
-                    <label class="login_datos"for="username">Usuario:</label>
+                    <label class="login_datos" for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="form_group">
-                    <label class="login_datos"for="password">Contraseña:</label>
+                    <label class="login_datos" for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button class="login_button"type="submit">Iniciar Sesión</button>
+                <button class="login_button" type="submit">Iniciar Sesión</button>
             </form>
             <div class="links_login">
                 <p>¿No tienes una cuenta? <a href="./register.html">Regístrate aquí</a></p>
@@ -35,8 +36,9 @@
             </div>
         </div>
     </section>
-    <footer> 
+    <footer>
         <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
     </footer>
+    <script src="./js/login.js"></script>
 </body>
 </html>
