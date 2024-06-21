@@ -10,21 +10,31 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="imagenes/clickmarket.png">
 </head>
-<body class="body_login">
+<body>
     <header class="header_login">
         <h1 class="titulos"><a href="index.html" class="Titulo_Principal"> CLICK MARKET </a></h1>
         <h4 class="subtitulo"> Lo que quieras, a un click. </h4>
         <a href="./index.html" class="home_link">HOME</a>
     </header>
-    <section class="login_container">
+    <section class="contenedor">
         <div class="login_box">
             <h2 class="titulo_login">Recuperar Contraseña</h2>
-            <div class="form_group">
-                <label class="login_datos" for="email">Ingrese su Email:</label>
-                <input type="email" id="email" name="email" required>
+            <form class="register">
+                <div class="grupo_formulario">
+                    <label class="login_datos" for="email">Ingrese su Email:</label>
+                    <input type="email" class="inputEmail" id="email" name="email" >
+                </div>
+                <div class="grupo_formulario">
+                    <input type="checkbox" class="inputCheckbox" id="confirmar" name="confirmar">
+                    <label for="confirmar">Quiero recuperar mi contraseña</label>
+                </div>
+                <button class="login_button" type="submit">Recuperar</button>
+                <div id="errorMessages" class="mensaje_error"></div>
+            </form>
+            <div id="mensajeExito" class="mensaje_exito" style="display:none;">
+                Recibirás un email con las instrucciones para recuperar tu contraseña. 
+                <a href="login.html">Ir al login</a>
             </div>
-            <p class="instructions">Te enviaremos un email con instrucciones para recuperarla</p>
-            <button class="login_button"type="submit">Continuar</button>
             <div class="links_recover">
                 <p>¿No necesitas recuperar tu cuenta?<a href="./login.html"> Iniciar sesión</a></p>
                 <p>¿No tienes una cuenta?<a href="./register.html"> Regístrate aquí</a></p>
@@ -34,5 +44,6 @@
     <footer> 
         <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
     </footer>
+    <script src="./js/recover.js"></script>
 </body>
 </html>

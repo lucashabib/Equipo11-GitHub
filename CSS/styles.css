@@ -401,7 +401,6 @@ input[type="email"] {
 }
 
 /*Register*/
-
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -471,7 +470,39 @@ input[type="password"] {
     height: 150px; 
     width: auto; 
   }
-  
+
+/* Recover */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.grupo_formulario {
+    margin-bottom: 15px;
+}
+
+
+.mensaje {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.mensaje_error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.mensaje_exito {
+    background-color: #d4edda;
+    color: #155724;
+}
+
   @media (max-width: 500px){
     .Contenedor_Index {
         flex-direction: row; 
