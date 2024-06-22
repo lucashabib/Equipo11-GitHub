@@ -11,10 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (loginLink) loginLink.style.display = 'none';
         if (registerLink) registerLink.style.display = 'none';
 
-        document.getElementById('logout-link').addEventListener('click', function () {
-            localStorage.removeItem('email');
-            location.reload();
-        });
     } else {
         if (loginLink) loginLink.style.display = 'block';
         if (registerLink) registerLink.style.display = 'block';
