@@ -1,96 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Click Market </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="imagenes/clickmarket.png">    
-    </head>
-    <body>
-        <header>
-            <nav id="nav_index">
-              <ul id="menu_index">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/clickmarket.png">    
+</head>
+<body>
+    <header>
+        <nav id="nav_index">
+            <ul id="menu_index">
                 <li><a href="index.html"><img src="imagenes/clickmarket.png" alt="Logo ClickMarket" id="logo_index"></a></li>
-                <li><a href="category.html" class="link_index">ÉLECTRONICA</a></li>
-                <li><a href="category.html" class="link_index">ACCESORIOS</a></li>
-                <li><a href="category.html" class="link_index">ROPA (HOMBRE)</a></li>
-                <li><a href="category.html" class="link_index">ROPA (MUJER)</a></li>
+                <li><a href="./category.html?category=electronics" class="link_index">ÉLECTRONICA</a></li>
+                <li><a href="./category.html?category=jewelery" class="link_index">ACCESORIOS</a></li>
+                <li><a href="./category.html?category=men's clothing" class="link_index">ROPA (HOMBRE)</a></li>
+                <li><a href="./category.html?category=women's clothing" class="link_index">ROPA (MUJER)</a></li>
                 <li><a href="login.html" class="link_index login-link">LOGIN</a></li>
                 <li><a href="register.html" class="link_index register-link">REGISTRO</a></li>
                 <li><a href="cart.html" class="link_index">CARRITO</a></li>
                 <div class="registro"></div>
-              </ul>
-            </nav>
-            <h1 class="titulos"><a href="index.html" class="Titulo_Principal">CLICK MARKET</a></h1>
-            <h4 class="subtitulo">Lo que quieras, a un click.</h4>   
-        </header>
-        <hr>
-        <h1 class="titulos"> Electronica </h1>
-        <hr>
-        <div class="Contenedor_Productos">
-            <div class="fila">
-                <div class="Contenedor_Items">
-                    <img src="imagenes/ps5.png" class="Imagen_Electronica" alt="Imagen Control PS5">
-                    <h3>Control Remoto PS5</h3>
-                    <p>Control Inalambrico de Dispositivo PS5</p>
-                    <p>$40 (dolares)</p>
-                    <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
-                    <a id="Detalles_Producto" href="producto.html">Ver Mas Sobre este Producto</a>
-                </div>
-                <div class="Contenedor_Items">
-                    <img src="imagenes/televisor.png" class="Imagen_Electronica" alt="Smart TV OLG">
-                    <h3>Televisor OLG 4K </h3>
-                    <p>SmartTV de "X" Pulgadas</p>
-                    <p>$150 (dolares)</p>
-                    <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
-                    <a id="Detalles_Producto" href="producto.html">Ver Mas Sobre este Producto</a>
-                </div>
-                <div class="Contenedor_Items">
-                    <img src="imagenes/thermomix.png" class="Imagen_Electronica" alt="Imagen ThermoMix">
-                    <h3>ThermoMix Cocina</h3>
-                    <p>Maquina ThermoMix para cocinar en el Siglo 21</p>
-                    <p>$100 (dolares)</p>
-                    <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
-                    <a id="Detalles_Producto" href="producto.html">Ver Mas Sobre este Producto</a>
-                </div>
-            </div>
-            <hr>
-            <div class="fila">
-                <div class="Contenedor_Items">
-                    <img src="imagenes/iphone.png" class="Imagen_Electronica" alt="Imagen iPhone 15">
-                    <h3>iPhone 15</h3>
-                    <p>Celular de ultima gama de Apple</p>
-                    <p>$1.200 (dolares)</p>
-                    <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
-                    <a id="Detalles_Producto" href="producto.html">Ver Mas Sobre este Producto</a>
-                </div>
-                <div class="Contenedor_Items">
-                    <img src="imagenes/roomba.png" class="Imagen_Electronica" alt="Imagen Roomba">
-                    <h3>Aspiradora "Roomba"</h3>
-                    <p>Aspiradora automatica inalambrica automatizada</p>
-                    <p>$80 (dolares)</p>
-                    <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
-                    <a id="Detalles_Producto" href="producto.html">Ver Mas Sobre este Producto</a>
-                </div>
-                <div class="Contenedor_Items">
-                    <img src="imagenes/proyector.png" class="Imagen_Electronica" alt="Imagen Proyector">
-                    <h3>Proyector Portatil</h3>
-                    <p>Proyector Portatil para reproducir via Bluetooth</p>
-                    <p>$60 (dolares)</p>
-                    <a href="cart.html"><img src="imagenes/carrito.png" alt="Boton para Agregar al Carrito" class="Imagen_Carrito"></a> <p id="texto_carrito"> Haga Click sobre el boton para agregar al carrito</p>
-                    <a id="Detalles_Producto" href="producto.html">Ver Mas Sobre este Producto</a>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <footer> 
-            <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
-        </footer>
-        <script src="./js/saludo.js"></script>
-        <script src="./js/logout.js"></script>
-    </body>
+            </ul>
+        </nav>
+        <h1 class="titulos"><a href="index.html" class="Titulo_Principal">CLICK MARKET</a></h1>
+        <h4 class="subtitulo">Lo que quieras, a un click.</h4>   
+    </header>
+    <hr>
+    <h1 class="titulos"> Productos </h1>
+    <hr>
+    <section class="Contenedor_Productos">
+
+    </section>
+    <hr>
+    <footer> 
+        <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
+    </footer>
+    <script src="./js/category.js"></script>
+    <script src="./js/saludo.js"></script>
+    <script src="./js/logout.js"></script>
+</body>
 </html>

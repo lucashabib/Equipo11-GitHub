@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" type="image/png" href="imagenes/clickmarket.png">
 </head>
@@ -19,30 +19,38 @@
     <section class="login_container">
         <div class="login_box">
             <h2 class="titulo_login">Registrarse</h2>
-            <div class="form_group">
-                <label class="login_datos" for="name">Nombre y Apellido:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form_group">
-                <label class="login_datos"for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form_group">
-                <label class="login_datos" for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form_group">
-                <label class="login_datos" for="confirm-password">Repita su Contraseña:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-            </div>
-            <button class="login_button"type="submit">Crear Cuenta</button>
+            <form id="registroForm">
+                <div class="form_group">
+                    <label class="login_datos" for="name">Nombre y Apellido:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form_group">
+                    <label class="login_datos" for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form_group">
+                    <label class="login_datos" for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form_group">
+                    <label class="login_datos" for="confirm-password">Repita su Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form_group">
+                    <input type="checkbox" id="termsCheckbox" required>
+                    <label class="login_datos" for="termsCheckbox">Acepto los Términos y Condiciones</label>
+                </div>
+                <button class="login_button" type="submit">Crear Cuenta</button>
+            </form>
             <div class="links_register">
                 <p>¿Ya tienes una cuenta? <a href="./login.html">Inicia sesión aquí</a></p>
             </div>
+            <div id="errorContainer" class="error-message"></div>
         </div>
     </section>
     <footer> 
         <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
     </footer>
+    <script src="./js/registro.js"></script>
 </body>
 </html>
