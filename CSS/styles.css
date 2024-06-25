@@ -50,9 +50,17 @@ hr{
     flex-direction: row;
     flex-wrap: wrap;
 } /*Comparten Index y Category*/
-  
 
-  
+.Contenedor_Items{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    justify-content:space-between;
+    align-items:center;
+    padding:3px;
+    text-align:center;
+} /*Comparten Index y Category*/
+
 .fila{
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +68,7 @@ hr{
     width: 100%;
 } /*Comparten Index y Category*/
    
-.Contenedor_Items{
+.Contenedor_electronics{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -70,7 +78,47 @@ hr{
     text-align: center;
 } /*Comparten Index y Category*/
 
-.Contenedor_electronica{
+.Contenedor_jewelery{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    text-align: center;
+} /*Comparten Index y Category*/
+
+.Contenedor_mens{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    text-align: center;
+} /*Comparten Index y Category*/
+
+.Contenedor_womens{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    text-align: center;
+} /*Comparten Index y Category*/
+
+.Contenedor_Electronica{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    text-align: center;
+} /*Comparten Index y Category*/
+
+.Contenedor_accesorios{
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -86,6 +134,11 @@ hr{
     padding: 0%;
     margin: 0;
 }
+
+.Imagen_Producto{
+    width: auto;
+    height: 100px;
+} /*Comparten Index y Category*/
 
 .Imagen_Electronica{
     width: auto;
@@ -106,7 +159,7 @@ hr{
     font-size: 12px;
 } /*Comparten Index y Category*/
 
-#Detalles_Producto{
+.Detalles_Producto{
     text-decoration: none;
     color: black;
     transition: color 0.25s ease;
@@ -114,7 +167,7 @@ hr{
     padding-top: 0%;
 }
 
-#Detalles_Producto:hover{
+.Detalles_Producto:hover{
     color: rgb(255, 105, 0);
 }
 

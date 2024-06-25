@@ -1,38 +1,60 @@
-let electronica = document.querySelectorAll(".Contenedor_electronica");
+let arrayElectronics = document.querySelectorAll(".Contenedor_electronics");
+let arrayJewelery = document.querySelectorAll(".Contenedor_jewelery");
+let arrayMens = document.querySelectorAll(".Contenedor_mens");
+let arrayWomens = document.querySelectorAll(".Contenedor_womens");
 
-fetch("https://fakestoreapi.com/products/category/electronics")
-    .then(function(res){
+fetch(`https://fakestoreapi.com/products`)
+    .then(function(res) {
         return res.json();
     })
-    .then(function(info){
+    .then(function(info) {
         let retorno = info;
         console.log(info);
 
-        for (let i = 0; i < retorno.length; i++){
-            if(i < electronica.length){
-                let nombreProd = retorno[i].title;
-                let precioProd = retorno[i].price;
-                let idProd = retorno[i].id;
-                let descripProd = retorno[i].description;
-                let imgProd = retorno[i].image;
-                let nombre = electronica[i].querySelector(".titulo_producto");
-                let precio = electronica[i].querySelector(".precio_producto");
-                let descripcion = electronica[i].querySelector(".descripcion_producto");
-                let imagen = electronica[i].querySelector(".Imagen_Electronica");
-                let boton = electronica[i].querySelector(".Detalles_Producto");
-                nombre.innerText = nombreProd;
-                precio.innerText = `$${precioProd}`;
-                imagen.src = imgProd;
-                descripcion.innerText = descripProd;
+        for (let i = 0; i < retorno.length; i++) {
+            let producto = retorno[i];
+            let nombreProd = producto.title;
+            let precioProd = producto.price;
+            let imgProd = producto.image;
+            let idProd = producto.id; // Obtener el ID del producto
+            let nombre, precio, imagen, enlace;
 
-
-
-
+            if (producto.category == "electronics") {
+                if (electronicsIndex < arrayElectronics.length) {
+                    let item = arrayElectronics[electronicsIndex++];
+                    nombre = item.querySelector(".titulo_producto");
+                    precio = item.querySelector(".precio_producto");
+                    imagen = item.querySelector(".Imagen_Producto");
+                    enlace = item.querySelector(".Detalles_Producto"); // Obtener el enlace
+                }
+            } else if (producto.category == "jewelery") {
+                if (jeweleryIndex < arrayJewelery.length) {
+                    let item = arrayJewelery[jeweleryIndex++];
+                    nombre = item.querySelector(".titulo_producto");
+                    precio = item.querySelector(".precio_producto");
+                    imagen = item.querySelector(".Imagen_Producto");
+                    enlace = item.querySelector(".Detalles_Producto"); // Obtener el enlace
+                }
+            } else if (producto.category == "men's clothing") {
+                if (mensIndex < arrayMens.length) {
+                    let item = arrayMens[mensIndex++];
+                    nombre = item.querySelector(".titulo_producto");
+                    precio = item.querySelector(".precio_producto");
+                    imagen = item.querySelector(".Imagen_Producto");
+                    enlace = item.querySelector(".Detalles_Producto"); // Obtener el enlace
+                }
+            } else if (producto.category == "women's clothing") {
+                if (womensIndex < arrayWomens.length) {
+                    let item = arrayWomens[womensIndex++];
+                    nombre = item.querySelector(".titulo_producto");
+                    precio = item.querySelector(".precio_producto");
+                    imagen = item.querySelector(".Imagen_Producto");
+                    enlace = item.querySelector(".Detalles_Producto"); // Obtener el enlace
+                }
             }
+
         }
-    })        
-    .catch(function(error){
+    })
+    .catch(function(error) {
         console.log('Error:', error);
     });
-
-    

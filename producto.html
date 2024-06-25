@@ -13,15 +13,16 @@
 <body>
     <header>
         <nav id="nav_index">
-          <ul id="menu_index">
-            <li><a href="index.html"><img src="imagenes/clickmarket.png" alt="Logo ClickMarket" id="logo_index"></a></li>
-            <li><a href="category.html" class="link_index">ÉLECTRONICA</a></li>
-            <li><a href="category.html" class="link_index">ACCESORIOS</a></li>
-            <li><a href="category.html" class="link_index">ROPA (HOMBRE)</a></li>
-            <li><a href="category.html" class="link_index">ROPA (MUJER)</a></li>
-            <li><a href="login.html" class="link_index">LOGIN</a></li>
-            <li><a href="cart.html" class="link_index">CARRITO</a></li>
-          </ul>
+            <ul id="menu_index">
+                <li><a href="index.html"><img src="imagenes/clickmarket.png" alt="Logo ClickMarket" id="logo_index"></a></li>
+                <li><a href="./category.html?category=electronics" class="link_index">ÉLECTRONICA</a></li>
+                <li><a href="./category.html?category=jewelery" class="link_index">ACCESORIOS</a></li>
+                <li><a href="./category.html?category=men's clothing" class="link_index">ROPA (HOMBRE)</a></li>
+                <li><a href="./category.html?category=women's clothing" class="link_index">ROPA (MUJER)</a></li>
+                <li><a href="login.html" class="link_index login-link">LOGIN</a></li>
+                <li><a href="register.html" class="link_index register-link">REGISTRO</a></li>
+                <li><a href="cart.html" class="link_index">CARRITO</a></li>
+              </ul>
         </nav>
         <h1 class="titulos"><a href="index.html" class="Titulo_Principal">CLICK MARKET</a></h1>
         <h4 class="subtitulo">Lo que quieras, a un click.</h4>
@@ -31,48 +32,21 @@
     <hr>
         <main>
             <section id="producto">
-                <h1>SMART TV</h1>
+                <h1 class="nombre_producto"></h1>
                 <div>
-                    <img src="./imagenes/televisor.png" alt="Imagen Smart TV" class="Televisor">
+                    <img src="" alt="" class="Televisor">
                 </div>
                 <div>
-                    <a href="./cart.html"><button>Agregar al Carrito</button></a>
+                    <a href="./cart.html"><button >Agregar al Carrito</button></a>
                 </div>
-                <p id="descripcion">Smart TV de "X" pulgadas, marca OLG</p>
+                <p id="descripcion_producto"></p>
             </section>
-            <hr>
-            <aside>
-                <h2>Detalles</h2>
-                <div id="stock">
-                    <p>Cantidad en Stock: XX</p>
-                </div>
-                <div>
-                    <label for="cantidad">Cantidad Deseada:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1">
-                </div>
-                <div>
-                    <label for="Modelo">Modelo :</label>
-                    <select id="Modelo" name="Modelo">
-                        <option value="Smart Curve Display">Smart Curve Display</option>
-                        <option value="Smart 4K Max Resolution">Smart 4K Max Resolution</option>
-                        <option value="Smart full HD">Smart full HD</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="Pantalla">Pantalla :</label>
-                    <select id="Pantalla" name="Pantalla">
-                        <option value="30 Pulgadas">30 Pulgadas</option>
-                        <option value="45 Pulgadas">45 Pulgadas</option>
-                        <option value="60 Pulgadas">60 Pulgadas</option>
-                        <option value="75 Pulgadas">75 Pulgadas</option>
-                    </select>
-                </div>
-            </aside>
         </main>
         <hr>
         <footer> 
             <p class="texto_footer">Lucas Habib, Cristobal Camdessus y Benjamin Orchansky // Equipo 11 // Click Market</p>
         </footer>
+        <script src="./js/producto.js"></script>
         <script src="./js/saludo.js"></script>
         <script src="./js/logout.js"></script>
 </body>
